@@ -6,14 +6,19 @@
         xmlns:local="clr-namespace:WPF_TEST_APP"
         mc:Ignorable="d"
         Title="First WPF App" Height="450" Width="800">
-    <Grid>
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12"> This is a demonstration text, with both horizontal and vertical alignment</TextBlock>
+    <Grid Background="#001423">
         <StackPanel>
-            <Label>Hello Word</Label>
-            <Button x:Name="BotaoLogin">Login</Button>
+            <Label Margin="0,50,0,0" HorizontalAlignment="Center" FontSize="16" Foreground="#FFFFFF"> Sign Up Section </Label>
+            <TextBlock Margin="300,50,300,10" Foreground="#FFFFFF"> Username or Email: </TextBlock>
+            <TextBox Margin="300,0,300,0"></TextBox>
+            <TextBlock Margin="300,10,300,10" Foreground="#FFFFFF"> Password:</TextBlock>
+            <TextBox Margin="300,0,300,10"></TextBox>
+            <CheckBox Margin="300,0,300,0" Foreground="#FFFFFF">Remember me</CheckBox>
+            <TextBlock Margin="300, 0, 300, 10" HorizontalAlignment="Right" Foreground="#FFFFFF">Forgot the password?</TextBlock>
+            <Button Width="100" Height="20" Margin="300, 0, 300, 10" Content="Login" Foreground="#1E2832"></Button>
         </StackPanel>
         <StackPanel>
-            <Rectangle Fill="Blue" Width="100" Height="50" Margin="50"/>
+            <TextBlock Margin="300,400,50,0" HorizontalAlignment="Right">Are you new here?</TextBlock>
         </StackPanel>
     </Grid>
 </Window>

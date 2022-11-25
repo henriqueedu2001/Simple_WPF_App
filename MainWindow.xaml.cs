@@ -24,7 +24,6 @@ namespace WPF_TEST_APP
         {
             string text = "login";
             InitializeComponent();
-            BotaoLogin.Content = text;
 
         }
     }
