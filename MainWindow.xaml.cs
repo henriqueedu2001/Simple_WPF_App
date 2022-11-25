@@ -22,7 +22,10 @@ namespace WPF_TEST_APP
     {
         public MainWindow()
         {
+            string text = "login";
             InitializeComponent();
+            BotaoLogin.Content = text;
+
         }
     }
 }

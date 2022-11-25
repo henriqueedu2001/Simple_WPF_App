@@ -10,7 +10,10 @@
         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12"> This is a demonstration text, with both horizontal and vertical alignment</TextBlock>
         <StackPanel>
             <Label>Hello Word</Label>
-            <Button>Click Here</Button>
+            <Button x:Name="BotaoLogin">Login</Button>
+        </StackPanel>
+        <StackPanel>
+            <Rectangle Fill="Blue" Width="100" Height="50" Margin="50"/>
         </StackPanel>
     </Grid>
 </Window>
