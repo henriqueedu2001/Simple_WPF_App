@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_TEST_APP.Models;
 
 namespace WPF_TEST_APP
 {
@@ -22,9 +23,29 @@ namespace WPF_TEST_APP
     {
         public MainWindow()
         {
-            string text = "login";
+            User cleito = new User(new Guid(), "Cleito", "cleito2001", "123", "admin");
+            Autentication.AddUser(cleito);
             InitializeComponent();
+        }
 
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            UserSpace userSpace;
+
+            string name = UsernameInput.Text;
+            string password = PasswordInput.Text;
+
+            if(Autentication.AutenticateUser(name, password))
+            {
+                CurrentUser.Name = name;
+                userSpace = new UserSpace();
+                this.Close();
+                userSpace.Show();
+            } else
+            {
+                MessageBox.Show("Incorrect username or password");
+            }
+            
         }
     }
 }

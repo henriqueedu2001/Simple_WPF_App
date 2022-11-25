@@ -10,12 +10,12 @@
         <StackPanel>
             <Label Margin="0,50,0,0" HorizontalAlignment="Center" FontSize="16" Foreground="#FFFFFF"> Sign Up Section </Label>
             <TextBlock Margin="300,50,300,5" Foreground="#FFFFFF"> Username or Email: </TextBlock>
-            <TextBox Margin="300,0,300,0"></TextBox>
+            <TextBox Name="UsernameInput" Margin="300,0,300,0"></TextBox>
             <TextBlock Margin="300,10,300,5" Foreground="#FFFFFF"> Password:</TextBlock>
-            <TextBox Margin="300,0,300,10"></TextBox>
+            <TextBox Name="PasswordInput" Margin="300,0,300,10"></TextBox>
             <CheckBox Margin="300,0,300,0" Foreground="#FFFFFF">Remember me</CheckBox>
             <TextBlock Margin="300, 0, 300, 10" HorizontalAlignment="Right" Foreground="#FFFFFF">Forgot the password?</TextBlock>
-            <Button Width="100" Height="20" Margin="300, 0, 300, 10" Content="Login" Background="#1E2832" Foreground="#FFFFFF"></Button>
+            <Button Name="LoginButton" Click="LoginButton_Click" Width="100" Height="20" Margin="300, 0, 300, 10" Content="Login" Background="#1E2832" Foreground="#FFFFFF"></Button>
         </StackPanel>
         <StackPanel>
             <TextBlock Margin="300,400,50,0" HorizontalAlignment="Right" Foreground="#FFFFFF">Are you new here? </TextBlock>
